@@ -8,8 +8,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview",
-    "build": "npm run generate-html && vite build",
-    "generate-html": "cp index.html dist/"
+    "build": "vite build"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
