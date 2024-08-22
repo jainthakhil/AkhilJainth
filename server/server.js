@@ -4,16 +4,14 @@ import cors from 'cors';
 import User from './model/contactingUserSchema.js'
 
 const app = express();
-const allowedOrigins = ['https://akhil-jainth-portfolio-frontend.vercel.app']; // Your deployed frontend URL
-app.use(cors({
-  origin: function(origin, callback) {
-    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  }
-}));
+const corsOptions = {
+  origin: 'https://akhil-jainth-portfolio-frontend.vercel.app', // Your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 
 const dbconnection = async ()=>{
