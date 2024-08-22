@@ -4,8 +4,15 @@ import cors from 'cors';
 import User from './model/contactingUserSchema.js'
 
 const app = express();
+const allowedOrigins = ['https://akhil-jainth-portfolio-frontend.vercel.app']; // Your deployed frontend URL
 app.use(cors({
-    origin: 'https://your-deployed-frontend.vercel.app'
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
 }));
 app.use(express.json());
 
