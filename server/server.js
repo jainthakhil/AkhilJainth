@@ -4,7 +4,14 @@ import cors from 'cors';
 import User from './model/contactingUserSchema.js'
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: [
+        'https://akhil-jainth-portfolio-frontend.vercel.app', // Deployed frontend
+        'http://localhost:5173' // Local frontend
+    ],
+    methods: ['GET', 'POST'], // Define allowed methods
+    credentials: true // If your requests include credentials like cookies
+}));
 app.use(express.json());
 
 const dbconnection = async ()=>{
@@ -43,6 +50,7 @@ app.post('/', async (req, res)=>{
         res.status(500).json({ error: 'Internal Server Error' });
     }
 })
+
 
 app.listen(5000, ()=>
     console.log("server is running on PORT 5000")
