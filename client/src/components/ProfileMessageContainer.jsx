@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfileGreetMessage from './ProfileGreetMessage'
-import ProfileMessageBox from './PRofileMessageBox'
+import ProfileMessageBox from './ProfileMessageBox'
 
 const ProfileMessageContainer = () => {
   return (
