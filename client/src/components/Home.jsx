@@ -4,7 +4,7 @@ import SideNavigation from './SideNavigation'
 import ProfileImgContainer from './ProfileImgContainer'
 import profileimg from '../media/images/profileimg.png'
 import ProfileMessageContainer from './ProfileMessageContainer'
-import ProfileHighlightContainer from './ProfilehighlightContainer'
+import ProfileHighlightContainer from './ProfileHighlightContainer'
 
 
 const Home = () => {
