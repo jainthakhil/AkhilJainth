@@ -18,7 +18,7 @@ const ContactForm = () => {
   const handleSubmit = async (e)=>{
     e.preventDefault();
     const {name, email, message} = userData;
-    const response = await fetch('http://localhost:5000', {
+    const response = await fetch(`${import.meta.env.BACKEND_URL}`, {
       method: 'POST',
       headers: {
         'Content-Type':'application/json'
