@@ -39,28 +39,28 @@ app.get('/', (req,res)=>{
     res.send("hello")
 })
 
-app.post('/', async (req, res)=>{
+app.post('/', async (req, res) => {
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
+        console.log("Validation failed:", { name, email, message });
         return res.status(400).json({ error: 'All fields are required' });
     }
 
-    console.log(name, email, message);
+    console.log("Received data:", { name, email, message });
 
-    // Simulate saving data to the database
     try {
-        res.status(201).json({ success: 'Message received!' });
-        const user = new User({name:name, email:email, message:message});
+        const user = new User({ name, email, message });
+        console.log("User object:", user);
         await user.save();
-        console.log("message sent");
-        
-    
+        console.log("Message saved successfully.");
+        res.status(201).json({ success: 'Message received!' });
     } catch (error) {
-        console.error('Error saving data:', error);
+        console.error('Database error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
     }
-})
+});
+
 
 
 app.listen(5000, ()=>
