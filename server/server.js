@@ -5,21 +5,15 @@ import User from './model/contactingUserSchema.js'
 
 const app = express();
 
-app.use(cors({
-    origin: [
-        'https://akhil-jainth-portfolio-frontend.vercel.app', // Deployed frontend
-        'http://localhost:5173' // Local frontend
-    ],
-    methods: ['GET', 'POST'], // Define allowed methods
-    credentials: true // If your requests include credentials like cookies
-}));
 
 const corsOptions = {
-  origin: 'https://akhil-jainth-portfolio-frontend.vercel.app', // Your frontend URL
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204
-};
+    origin: [
+      'https://akhil-jainth-portfolio-frontend.vercel.app', // Deployed frontend
+      'http://localhost:5173' // Local frontend
+    ],
+    methods: ['GET', 'POST'], // Allowed methods
+    credentials: true // Allow credentials like cookies
+  };
 
 app.use(cors(corsOptions));
 
@@ -55,6 +49,7 @@ app.post('/', async (req, res) => {
         await user.save();
         console.log("Message saved successfully.");
         res.status(201).json({ success: 'Message received!' });
+        
     } catch (error) {
         console.error('Database error:', error);
         res.status(500).json({ error: 'Internal Server Error' });
