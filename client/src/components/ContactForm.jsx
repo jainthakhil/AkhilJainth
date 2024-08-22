@@ -57,7 +57,7 @@ const ContactForm = () => {
             <input type="text" name='name' value={userData.name} placeholder='Your Name' className='p-3 rounded-lg my-4' onChange={handleChange}/>
             <input type="email" name='email' value={userData.email} placeholder='Your Mail' className='p-3 rounded-lg my-4' onChange={handleChange}/>
             <textarea name="message" value={userData.message} id="" rows={6} placeholder='Message' className='p-3 rounded-lg my-4' onChange={handleChange}></textarea>
-            <input type='submit' className=' w-40 h-12 rounded-lg m-auto mt-4 text-white cursor-pointer' value={messageSent} onClick={handleSubmit} style={{backgroundColor : btnClr}}/>
+            <input type='submit' className=' w-40 h-12 rounded-lg m-auto mt-4 text-white cursor-pointer transition-scale duration-200 ease-in-out active:scale-95' value={messageSent} onClick={handleSubmit} style={{backgroundColor : btnClr}}/>
         </form>
     </div>
   )
