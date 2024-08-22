@@ -21,7 +21,7 @@ app.get('/', (req,res)=>{
     res.send("hello")
 })
 
-app.post('/', async (req, res)=>{
+app.post('https://akhil-jainth-portfolio-frontend-ew8bkas9e.vercel.app/', async (req, res)=>{
     const { name, email, message } = req.body;
 
     if (!name || !email || !message) {
