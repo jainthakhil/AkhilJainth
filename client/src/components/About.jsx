@@ -9,7 +9,7 @@ const About = () => {
     <section id='about' className='h-auto w-full flex bg-white'>
       <Social />
       <div className="content-box h-full w-full text-center py-16 px-8 ">
-        <h1 className='text-[3rem] font-semibold leading-normal'>A Passionate <span className='text-[#0FA4AF]'>Developer</span> <br />Believe in <span className='text-[#0FA4AF]'>Quality</span> </h1> 
+        <h1 className='lg:text-[3rem] text-[2.5rem] font-semibold leading-normal'>A Passionate <span className='text-[#0FA4AF]'>Developer</span> <br />Believe in <span className='text-[#0FA4AF]'>Quality</span> </h1> 
         {/* <h1 className='text-[3rem] font-semibold'>Believe in <span className='text-[#0FA4AF]'>Quality</span></h1> */}
         <div className="w-full cardbox flex items-center justify-center flex-wrap mt-8">
           
