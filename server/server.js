@@ -4,7 +4,9 @@ import cors from 'cors';
 import User from './model/contactingUserSchema.js'
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://your-deployed-frontend.vercel.app'
+}));
 app.use(express.json());
 
 const dbconnection = async ()=>{
