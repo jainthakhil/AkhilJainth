@@ -4,6 +4,7 @@ import cors from 'cors';
 import User from './model/contactingUserSchema.js'
 
 const app = express();
+
 app.use(cors({
     origin: [
         'https://akhil-jainth-portfolio-frontend.vercel.app', // Deployed frontend
@@ -12,6 +13,16 @@ app.use(cors({
     methods: ['GET', 'POST'], // Define allowed methods
     credentials: true // If your requests include credentials like cookies
 }));
+
+const corsOptions = {
+  origin: 'https://akhil-jainth-portfolio-frontend.vercel.app', // Your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+  optionsSuccessStatus: 204
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 const dbconnection = async ()=>{
