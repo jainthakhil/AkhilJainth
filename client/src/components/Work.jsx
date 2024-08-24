@@ -8,8 +8,8 @@ const Work = () => {
   return (
     <section id='work' className='h-auto w-full flex bg-[#EDF2F8]'>
       <Social/>
-      <div className="content-box h-full w-full text-center py-16 px-8 ">
-      <h1 className='lg:text-[3rem] text-[2.5rem] font-semibold'><span className='text-[#0FA4AF]'>Projects</span> I Made</h1>
+      <div className="content-box h-full w-full text-center lg:py-16 py-8 px-8 ">
+      <h1 className='lg:text-[3rem] text-[1.5rem] font-semibold'><span className='text-[#0FA4AF]'>Projects</span> I Made</h1>
 
         <div className="cardbox w-full cardbox flex items-center justify-center flex-wrap mt-8">
 

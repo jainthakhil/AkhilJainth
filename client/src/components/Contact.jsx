@@ -11,8 +11,8 @@ const Contact = () => {
   return (
     <section id='contact' className='h-auto w-full flex bg-[#EDF2F8]'>
       <Social/>
-      <div className="content-box h-full w-full flex flex-col items-center justify-center text-center py-16 px-8 ">
-        <h1 className=' lg:text-[3rem] text-[2.5rem]'><span className='text-[#0FA4AF]'>Contact</span>  Me Here</h1>
+      <div className="content-box h-full w-full flex flex-col items-center justify-center text-center lg:py-16 py-8 px-8 ">
+        <h1 className=' lg:text-[3rem] text-[1.5rem]'><span className='text-[#0FA4AF]'>Contact</span>  Me Here</h1>
         
         <div className="contact-option-box min-[320px]:w-full max-[768px]:w-[60%] md:w-[60%] flex flex-col lg:flex-row items-center mt-12 m-8 text-[#9CA3AF]">
         <Contactcard

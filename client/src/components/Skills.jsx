@@ -10,8 +10,8 @@ const Skills = () => {
   return (
     <section id='skills' className='h-auto w-full flex bg-white'>
       <Social />
-      <div className="content-box h-full w-full flex flex-col items-center justify-center text-center py-16 px-8">
-        <h1 className='lg:text-[3rem] text-[2.5rem] font-semibold'><span className='text-[#0FA4AF]'>Skills</span> & Experiences</h1>
+      <div className="content-box h-full w-full flex flex-col items-center justify-center text-center lg:py-16 py-8 px-8">
+        <h1 className='lg:text-[3rem] text-[1.5rem] font-semibold'><span className='text-[#0FA4AF]'>Skills</span> & Experiences</h1>
         <div className="skills-experience-box w-full h-full flex lg:flex-row flex-col mt-8">
           <div className="skills-box h-full w-full lg:w-1/2 flex items-center justify-center flex-wrap ">
 
