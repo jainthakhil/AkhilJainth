@@ -11,7 +11,7 @@ export const links = [
     },
     {
         id:3,
-        address:"https://www.instagram.com/",
-        img:"fa-brands fa-instagram fa-lg"
+        address:"mailto:akhiljainth16@gmail.com",
+        img:"fa-regular fa-envelope fa-lg"
     }
 ]
