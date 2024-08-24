@@ -2,8 +2,8 @@ import React, {createContext, useContext, useState} from "react";
 
 export const SideNavContext = createContext(null)
 export const useSideNav = ()=>{
-    const SideNav = useContext(SideNavContext)
-    return SideNav
+    const SideNav = useContext(SideNavContext);
+    return SideNav;
 }
 
 export const Provider = (props)=>{
