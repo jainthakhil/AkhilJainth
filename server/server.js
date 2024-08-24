@@ -8,7 +8,7 @@ const app = express();
 
 const corsOptions = {
     origin: [
-      'https://akhil-jainth-portfolio-frontend.vercel.app', // Deployed frontend
+      'https://akhiljainthdev.vercel.app', // Deployed frontend
       'http://localhost:5173' // Local frontend
     ],
     methods: ['GET', 'POST'], // Allowed methods
