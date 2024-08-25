@@ -22,7 +22,7 @@ const Contact = () => {
         />
         <Contactcard
           img={phoneimg}
-          src='tel: +91 XX27235630'
+          src='#'
           text='+91 XXXX235630'
         />
         </div>
