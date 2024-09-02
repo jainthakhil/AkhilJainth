@@ -17,6 +17,8 @@ const Work = () => {
           <WorkCard
             key={work.id}
             img={work.img}
+            githublink={work.githublink}
+            deployedlink = {work.deployedlink}
             title={work.title}
             desc={work.desc}
           />
