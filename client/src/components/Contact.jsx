@@ -22,8 +22,8 @@ const Contact = () => {
         />
         <Contactcard
           img={phoneimg}
-          src='tel: +91 1234567890'
-          text='+91 1234567890'
+          src='#'
+          text='+91 XXXX235630'
         />
         </div>
         <ContactForm />
