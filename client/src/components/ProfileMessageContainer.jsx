@@ -9,8 +9,8 @@ const ProfileMessageContainer = () => {
       name="Akhil"
     />
     <ProfileMessageBox
-      role1="FRONTEND DEVELOPER"
-      role2="BACKEND DEVELOPER"
+      role1="WEB DEVELOPER"
+      role2="FREELANCER"
     />
 
     </div>

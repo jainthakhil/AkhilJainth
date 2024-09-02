@@ -13,5 +13,5 @@ export const links = [
         id:3,
         address:"mailto:akhiljainth16@gmail.com",
         img:"fa-regular fa-envelope fa-lg"
-    }
+    }                                        
 ]

@@ -7,7 +7,7 @@ export const useSideNav = ()=>{
 }
 
 export const Provider = (props)=>{
-    const [active, setActive] = useState('')
+    const [active, setActive] = useState('#home')
     return(
         <SideNavContext.Provider value={{active, setActive}}>
             {props.children}
