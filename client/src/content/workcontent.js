@@ -1,6 +1,7 @@
 import weatherimg from '../media/images/weatherimg.jpg'
 import aqiimg from '../media/images/aqiimg.jpg'
 import notesimg from '../media/images/notes1img.jpg'
+import fitimg from '../media/images/fitimg.jpg'
 
 export const works = [
     {
@@ -13,6 +14,14 @@ export const works = [
     },
     {
         id:2,
+        img:fitimg,
+        githublink:'https://github.com/jainthakhil/fitbuy.ecomm',
+        deployedlink:'#',
+        title:'Fitbuy',
+        desc:'A fitness clothing website.'
+    },
+    {
+        id:3,
         img:weatherimg,
         githublink:'#',
         deployedlink:'#',
@@ -20,7 +29,7 @@ export const works = [
         desc:'A real time weather web app'
     },
     {
-        id:3,
+        id:4,
         img:aqiimg,
         githublink:'https://github.com/jainthakhil/AQI',
         deployedlink:'https://github.com/jainthakhil/AQI',

@@ -4,6 +4,11 @@ import mongodbimg from '../media/images/mongodb1.png'
 import expressjsimg from '../media/images/expressjs.png'
 import gitimg from '../media/images/git.png'
 import reduximg from '../media/images/redux1.png'
+import cplusplusimg from '../media/images/cplusplusimg.png'
+import pythonimg from '../media/images/pythonimg.png'
+import tailwindcssimg from '../media/images/tailwindcssimg.png'
+import jsimg from '../media/images/jsimg.png'
+
 
 
 
@@ -21,7 +26,7 @@ export const skills = [
     {
         id:3,
         img:expressjsimg,
-        name:"express.js",
+        name:"Express.js",
     },
     {
         id:4,
@@ -37,5 +42,25 @@ export const skills = [
         id:6,
         img:gitimg,
         name:"Git",
+    },
+    {
+        id:7,
+        img:jsimg,
+        name:"JavaScript",
+    },
+    {
+        id:8,
+        img:cplusplusimg,
+        name:"C++",
+    },
+    {
+        id:9,
+        img:pythonimg,
+        name:"Python",
+    },
+    {
+        id:10,
+        img:tailwindcssimg,
+        name:"Tailwind CSS",
     }
 ]

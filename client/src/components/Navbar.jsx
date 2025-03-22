@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logo from '../media/images/logo2.png'
+import logo from '../media/images/logo3.png'
 import Sidebar from './Sidebar'
 import Navlink from './Navlink'
 
