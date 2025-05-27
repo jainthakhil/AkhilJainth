@@ -13,7 +13,8 @@ const Skills = () => {
       <div className="content-box h-full w-full flex flex-col items-center justify-center text-center lg:py-16 py-8 px-8">
         <h1 className='lg:text-[3rem] text-[1.5rem] font-semibold'><span className='text-[#0FA4AF]'>Skills</span> & Experiences</h1>
         <div className="skills-experience-box w-full h-full flex lg:flex-row flex-col mt-8">
-          <div className="skills-box h-full w-full lg:w-1/2 flex items-center justify-center flex-wrap ">
+
+          <div className="skills-box h-full w-full lg:w-[60%] flex items-center justify-center flex-wrap ">
 
             {skills.map((skill) => (
               <SkillCircle
@@ -25,7 +26,7 @@ const Skills = () => {
             ))}
 
           </div>
-          <div className="experience-box w-full lg:w-1/2 mt-8 lg:mt-0 ">
+          <div className="experience-box w-full lg:w-[40%] mt-8 lg:mt-0 ">
           {experience.map((exp)=>(
             <Experiencebox 
               key={exp.id}

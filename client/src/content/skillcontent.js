@@ -9,6 +9,8 @@ import pythonimg from '../media/images/pythonimg.png'
 import tailwindcssimg from '../media/images/tailwindcssimg.png'
 import jsimg from '../media/images/jsimg.png'
 import firebaseimg from '../media/images/firebaseimg.png'
+import htmlimg from '../media/images/htmlimg.png'
+import cssimg from '../media/images/cssimg.png'
 
 
 
@@ -36,13 +38,13 @@ export const skills = [
     },
     {
         id:5,
-        img:reduximg,
-        name:"Redux",
+        img:htmlimg,
+        name:"HTML",
     },
     {
         id:6,
-        img:gitimg,
-        name:"Git",
+        img:cssimg,
+        name:"CSS",
     },
     {
         id:7,
@@ -51,21 +53,31 @@ export const skills = [
     },
     {
         id:8,
+        img:reduximg,
+        name:"Redux",
+    },
+    {
+        id:9,
+        img:gitimg,
+        name:"Git",
+    },
+    {
+        id:10,
         img:cplusplusimg,
         name:"C++",
     },
     {
-        id:9,
+        id:11,
         img:pythonimg,
         name:"Python",
     },
     {
-        id:10,
+        id:12,
         img:tailwindcssimg,
         name:"Tailwind CSS",
     },
     {
-        id:11,
+        id:13,
         img:firebaseimg,
         name:"Firebase",
     }
