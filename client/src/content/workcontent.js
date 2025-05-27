@@ -2,10 +2,19 @@ import weatherimg from '../media/images/weatherimg.jpg'
 import aqiimg from '../media/images/aqiimg.jpg'
 import notesimg from '../media/images/notes1img.jpg'
 import fitimg from '../media/images/fitimg.jpg'
+import filemanagerimg from '../media/images/filemanagerimg.jpg'
 
 export const works = [
     {
         id:1,
+        img:filemanagerimg,
+        githublink:'https://github.com/jainthakhil/MySpace',
+        deployedlink:'#',
+        title:'Cloud based file manager',
+        desc:'A React and Firebase powered cloud file manager and file sharing web app'
+    },
+    {
+        id:2,
         img:notesimg,
         githublink:'https://github.com/jainthakhil/MynotesApp',
         deployedlink:'https://mynotes-app-frontend.vercel.app',
@@ -13,7 +22,7 @@ export const works = [
         desc:'A full stack MERN based notes making web app'
     },
     {
-        id:2,
+        id:3,
         img:fitimg,
         githublink:'https://github.com/jainthakhil/fitbuy.ecomm',
         deployedlink:'#',
@@ -21,7 +30,7 @@ export const works = [
         desc:'A fitness clothing website.'
     },
     {
-        id:3,
+        id:4,
         img:weatherimg,
         githublink:'#',
         deployedlink:'#',
@@ -29,7 +38,7 @@ export const works = [
         desc:'A real time weather web app'
     },
     {
-        id:4,
+        id:5,
         img:aqiimg,
         githublink:'https://github.com/jainthakhil/AQI',
         deployedlink:'https://github.com/jainthakhil/AQI',

@@ -8,6 +8,7 @@ import cplusplusimg from '../media/images/cplusplusimg.png'
 import pythonimg from '../media/images/pythonimg.png'
 import tailwindcssimg from '../media/images/tailwindcssimg.png'
 import jsimg from '../media/images/jsimg.png'
+import firebaseimg from '../media/images/firebaseimg.png'
 
 
 
@@ -62,5 +63,10 @@ export const skills = [
         id:10,
         img:tailwindcssimg,
         name:"Tailwind CSS",
+    },
+    {
+        id:11,
+        img:firebaseimg,
+        name:"Firebase",
     }
 ]
