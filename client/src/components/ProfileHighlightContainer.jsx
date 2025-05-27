@@ -3,6 +3,7 @@ import HighlightImg from './HighlightImg'
 import reactimg from '../media/images/atom.png'
 import reduximg from '../media/images/redux1.png'
 import vscodeimg from '../media/images/vscodeimg.png'
+import firebaseimg from '../media/images/firebaseimg.png'
 
 const ProfileHighlightContainer = () => {
     return (
@@ -15,12 +16,12 @@ const ProfileHighlightContainer = () => {
         </div>
         <div className="highlight-box w-full h-36 flex lg:justify-start justify-center">
         <HighlightImg
-            img = {vscodeimg}
+            img = {reduximg}
         />
         </div>
         <div className="highlight-box w-full  h-32 flex justify-center">
         <HighlightImg
-            img = {reduximg}
+            img = {firebaseimg}
         />
         </div>
         
