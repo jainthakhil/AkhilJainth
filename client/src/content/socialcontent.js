@@ -6,7 +6,7 @@ export const links = [
     },
     {
         id:2,
-        address:"https://www.linkedin.com/in/akhil-jainth-aj16102003/",
+        address:"https://www.linkedin.com/in/akhil-jainth/",
         img:"fa-brands fa-linkedin-in fa-lg"
     },
     {
